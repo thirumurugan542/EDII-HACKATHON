@@ -1,0 +1,49 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("about\ backround.jpg");
+    background-size: cover;
+    position:relative;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    backdrop-filter: blur(6px);
+}
+.about{
+    position:absolute;
+    z-index:2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 40px;
+    border-radius:50%;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    width: 150px;
+    text-align: center;
+    color: black;
+    border-bottom: 5px solid #ff325b;
+}
+.overall,.pottery, .handicrafts, .decorative{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-products{
+    display: flex;
+    justify-content:space-between ;
+}

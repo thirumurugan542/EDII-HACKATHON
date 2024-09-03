@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    border-bottom: 5px solid #ff3b52;
+    padding: 10px;
+    margin: auto;
+    width: 320px;
+}
+.product-title{
+    font-size: 18px;
+}
+.product-price{
+    font-size: 16px;
+}
+.product-price{
+color: #555;
+}
+.pottery{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.pottery-product{
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.pottery-product:hover
+{
+    transform: translateY(-10px);
+}
+.pottery-product img{
+    max-width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}

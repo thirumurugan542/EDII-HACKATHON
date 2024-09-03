@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.logo img{
+    height: 150px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+}
+nav{
+    flex : 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: nones;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+nav ul li:hover{
+    transform: translateY(-5px);
+}
+a{
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+a:hover{
+    color: #ff523b
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    position: relative;
+}
+.row img{
+    width: 100%;
+    opacity: 1;
+    border-radius: 10px;
+}
+.title{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    max-width: 400px;
+    top: 250px;
+    left: 60px;
+}
+.title h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0 ;
+}
+.title p {
+    color: white;
+}
+.btn{
+    color:white;
+    display: inline-block;
+    background-color: #ff523b;
+    padding: 8px 30px;
+    margin: 30px 0 ;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+
+    color: white;
+    transform: translateY(-8px)
+}
+
+.categories{
+    margin:70px 0;
+}
+.col-3{
+    max-width: 400px;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.col-3 img:hover{
+    transform: translateY(-8px);
+}
+.small-container{
+    display: flex;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.small-container p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.col-4{
+    padding: 10px;
+    max-width: 230px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    transition: 0.3s;
+}
+.col-4 .img img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color:#555;
+
+}
+.col-4 p {
+    text-align: left;
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-8px);
+}
+.small-container1 h2{
+    text-align: center;
+    margin: 0 auto 80px;
+    line-height: 60px;
+    color: #555;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 30px;
+}
+.footer{
+    background-color: #ff523b;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.copyright,.social-meida-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    margin-right: 20px;
+}
+.copyright p{
+    color: black;
+}
+hr{
+    margin: 0 30px;
+    width: 1px;
+    background-color: black;
+    outline: none;
+    border: none;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin:10px ;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: translateY(-8px);
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-left: 20px;
+}
+.products a{
+    color: black;
+}
+.products a:hover{
+    color: white;
+}
+.chatbot{
+    position: fixed;
+    top: 86vh;
+    right: 4px;
+    
+}
+.chatbot a img{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    transition:0.3s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.chatbot a img:hover{
+    transform:translate(-2px,-5px);
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+/* media query for menu */
+@media only screen and (max-width: 800px){
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+}
